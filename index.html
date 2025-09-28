@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>夜喵影视 - 官方下载</title>
+    <title>pvzE下载</title>
     <style>
         body {
             margin: 0;
@@ -884,13 +884,13 @@
         }
 
         /* 合作伙伴区块 */
-        .partners-section {
+        。partners-section {
             position: relative;
             padding: 60px 0;
             overflow: hidden;
         }
 
-        .partners-container {
+        。partners-container {
             position: relative;
             max-width: 1200px;
             margin: 0 auto;
@@ -898,37 +898,37 @@
             z-index: 1;
         }
 
-        .partners-container h2 {
+        。partners-container h2 {
             text-align: center;
             margin-bottom: 40px;
             color: var(--text-color-dark);
         }
 
-        .partner-category {
+        。partner-category {
             margin-bottom: 40px;
         }
 
-        .partner-category h3 {
+        。partner-category h3 {
             margin-bottom: 20px;
             color: var(--text-color-dark);
         }
 
-        .partner-cards {
+        。partner-cards {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* PC端一行两个 */
+            grid-template-columns: repeat(2， 1fr); /* PC端一行两个 */
             gap: 20px;
             max-width: 700px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-        .partner-card {
+        。partner-card {
             position: relative;
             background: white;
             border-radius: 8px;
             padding: 25px 15px;
             text-align: center;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: 全部 0.3s cubic-bezier(0.4， 0, 0.2, 1);
             overflow: hidden;
             aspect-ratio: 16/9;
             display: flex;
@@ -937,7 +937,7 @@
             will-change: transform;
         }
 
-        .partner-card img {
+        。partner-card img {
             width: auto;
             height: 60%;
             object-fit: contain;
@@ -945,7 +945,7 @@
             transition: transform 0.3s ease;
         }
 
-        .partner-name {
+        。partner-name {
             position: absolute;
             left: 0;
             right: 0;
@@ -956,60 +956,60 @@
             background: linear-gradient(to top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.7));
         }
 
-        .partner-name h4 {
+        。partner-name h4 {
             margin: 0;
             color: #333 !important; /* 深灰色文字 */
             font-size: 0.9rem;
             opacity: 0;
             transform: translateY(10px);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: 全部 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         /* 暗黑模式适配 */
         @media (prefers-color-scheme: dark) {
-            .partner-name {
+            。partner-name {
                 background: linear-gradient(to top, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
             }
             
-            .partner-name h4 {
+            。partner-name h4 {
                 color: #fff !important;
             }
         }
 
         /* 悬停效果 */
-        .partner-card:hover {
+        。partner-card:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
-        .partner-card:hover .partner-name {
+        。partner-card:hover .partner-name {
             transform: translateY(0);
         }
 
-        .partner-card:hover .partner-name h4 {
+        。partner-card:hover .partner-name h4 {
             opacity: 1;
             transform: translateY(0);
         }
 
-        .partner-card:hover img {
+        。partner-card:hover img {
             transform: scale(0.95);
         }
 
         /* 移动端适配 */
         @media (max-width: 768px) {
-            .partner-cards {
+            。partner-cards {
                 grid-template-columns: 1fr; /* 移动端一行一个 */
                 gap: 15px;
                 padding: 0 15px;
                 max-width: 240px; /* 控制移动端卡片宽度 */
             }
 
-            .partner-card {
+            。partner-card {
                 padding: 20px 12px;
             }
         }
 
-        .background-animation {
+        。background-animation {
             position: fixed;
             top: 0;
             left: 0;
@@ -1021,13 +1021,13 @@
             background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.02));
         }
 
-        .bubble {
+        。bubble {
             position: absolute;
             border-radius: 50%;
             background: linear-gradient(
-                45deg,
-                rgba(var(--bubble-color-1), 0.1),
-                rgba(var(--bubble-color-2), 0.1)
+                45deg，
+                rgba(var(--bubble-color-1)， 0.1)，
+                rgba(var(--bubble-color-2)， 0.1)
             );
             backdrop-filter: blur(1px);
             animation: float var(--duration) ease-in-out infinite;
@@ -1035,20 +1035,20 @@
 
         /* 设置泡泡的颜色变量 */
         :root {
-            --bubble-color-1: 100, 149, 237;  /* 矢车菊蓝 */
+            --bubble-color-1: 100， 149, 237;  /* 矢车菊蓝 */
             --bubble-color-2: 135, 206, 235;  /* 天蓝色 */
         }
 
         /* 暗黑模式颜色 */
         @media (prefers-color-scheme: dark) {
             :root {
-                --bubble-color-1: 70, 130, 180;  /* 钢蓝色 */
-                --bubble-color-2: 65, 105, 225;  /* 宝蓝色 */
+                --bubble-color-1: 70， 130， 180;  /* 钢蓝色 */
+                --bubble-color-2: 65, 105， 225;  /* 宝蓝色 */
             }
         }
 
         /* 设置不同泡泡的大小和动画 */
-        .bubble:nth-child(1) {
+        。bubble:nth-child(1) {
             --size: 120px;
             --duration: 20s;
             width: var(--size);
@@ -1057,7 +1057,7 @@
             animation-delay: 0s;
         }
 
-        .bubble:nth-child(2) {
+        。bubble:nth-child(2) {
             --size: 80px;
             --duration: 18s;
             width: var(--size);
@@ -1066,7 +1066,7 @@
             animation-delay: -2s;
         }
 
-        .bubble:nth-child(3) {
+        。bubble:nth-child(3) {
             --size: 100px;
             --duration: 22s;
             width: var(--size);
@@ -1075,7 +1075,7 @@
             animation-delay: -4s;
         }
 
-        .bubble:nth-child(4) {
+        。bubble:nth-child(4) {
             --size: 90px;
             --duration: 25s;
             width: var(--size);
@@ -1084,7 +1084,7 @@
             animation-delay: -6s;
         }
 
-        .bubble:nth-child(5) {
+        。bubble:nth-child(5) {
             --size: 130px;
             --duration: 21s;
             width: var(--size);
@@ -1093,7 +1093,7 @@
             animation-delay: -8s;
         }
 
-        .bubble:nth-child(6) {
+        。bubble:nth-child(6) {
             --size: 110px;
             --duration: 19s;
             width: var(--size);
@@ -1111,7 +1111,7 @@
             animation-delay: -12s;
         }
 
-        .bubble:nth-child(8) {
+        。bubble:nth-child(8) {
             --size: 115px;
             --duration: 24s;
             width: var(--size);
@@ -1120,7 +1120,7 @@
             animation-delay: -14s;
         }
 
-        .bubble:nth-child(9) {
+        。bubble:nth-child(9) {
             --size: 85px;
             --duration: 20s;
             width: var(--size);
@@ -1129,7 +1129,7 @@
             animation-delay: -16s;
         }
 
-        .bubble:nth-child(10) {
+        。bubble:nth-child(10) {
             --size: 125px;
             --duration: 26s;
             width: var(--size);
@@ -1149,121 +1149,121 @@
 
         /* 移动端适配 */
         @media (max-width: 768px) {
-            .bubble {
+            。bubble {
                 --size: calc(var(--size) * 0.7);  /* 移动端缩小泡泡尺寸 */
             }
         }
 
-        .app-screenshots {
+        。app-screenshots {
             position: relative;
             overflow: hidden;
         }
 
-        .app-screenshots-container {
+        。app-screenshots-container {
             position: relative;
             max-width: 1200px;
             margin: 0 auto;
         }
 
         /* 滑动显示动画 */
-        .slide-fade-up {
+        。slide-fade-up {
             opacity: 0;
             transform: translateY(30px); /* 减小移动距离 */
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* 使用更快的动画时间 */
+            transition: 全部 0.5s cubic-bezier(0.4， 0, 0.2, 1); /* 使用更快的动画时间 */
         }
 
-        .slide-fade-up.active {
+        。slide-fade-up。active {
             opacity: 1;
             transform: translateY(0);
         }
 
         /* 为不同元素设置不同的延迟 */
-        .slide-fade-up:nth-child(2) {
+        。slide-fade-up:nth-child(2) {
             transition-delay: 0.2s;
         }
-        .slide-fade-up:nth-child(3) {
+        。slide-fade-up:nth-child(3) {
             transition-delay: 0.4s;
         }
-        .slide-fade-up:nth-child(4) {
+        。slide-fade-up:nth-child(4) {
             transition-delay: 0.6s;
         }
 
         /* 优化动画性能 */
-        .partner-card,
-        .bg-icon,
-        .bubble,
-        .slide-fade-up {
-            will-change: transform, opacity;
+        。partner-card，
+        。bg-icon，
+        。bubble，
+        。slide-fade-up {
+            will-change: transform， opacity;
             transform: translateZ(0);
             backface-visibility: hidden;
             perspective: 1000px;
         }
 
         /* 优化过渡效果 */
-        .partner-card {
+        。partner-card {
             transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         /* 优化背景动画 */
-        .bubble {
-            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        。bubble {
+            animation-timing-function: cubic-bezier(0.4， 0, 0.2， 1);
         }
 
         /* 优化滚动性能 */
-        .background-animation {
+        。background-animation {
             transform: translateZ(0);
             backface-visibility: hidden;
         }
 
         /* 减少重绘区域 */
-        .partner-name {
+        。partner-name {
             transform: translateZ(0);
         }
 
         /* 在 CSS 样式中添加明亮主题下的 footer 样式 */
-        .light-theme footer {
+        。light-theme footer {
             color: #333 !important; /* 使用深色文字 */
         }
 
         /* 友情链接卡片特殊样式 */
-        .partners-section:last-of-type .partner-cards {
-            grid-template-columns: repeat(3, 1fr); /* 一行显示3个 */
+        。partners-section:last-of-type 。partner-cards {
+            grid-template-columns: repeat(3， 1fr); /* 一行显示3个 */
             max-width: 800px; /* 控制最大宽度 */
             margin: 0 auto;
         }
 
-        .partners-section:last-of-type .partner-card {
+        。partners-section:last-of-type 。partner-card {
             aspect-ratio: unset; /* 移除正方形比例 */
             height: auto; /* 自适应高度 */
             padding: 15px 20px; /* 调整内边距 */
         }
 
-        .partners-section:last-of-type .partner-name {
+        。partners-section:last-of-type 。partner-name {
             position: static; /* 移除绝对定位 */
             transform: none;
             background: none;
             padding: 0;
         }
 
-        .partners-section:last-of-type .partner-name h4 {
+        。partners-section:last-of-type 。partner-name h4 {
             margin: 0;
             color: var(--text-color-dark);
         }
 
         /* 适配移动端 */
         @media (max-width: 768px) {
-            .partners-section:last-of-type .partner-cards {
-                grid-template-columns: repeat(2, 1fr); /* 移动端一行显示2个 */
+            。partners-section:last-of-type .partner-cards {
+                grid-template-columns: repeat(2， 1fr); /* 移动端一行显示2个 */
             }
         }
 
         @media (max-width: 480px) {
-            .partners-section:last-of-type .partner-cards {
+            。partners-section:last-of-type 。partner-cards {
                 grid-template-columns: 1fr; /* 更小屏幕一行显示1个 */
             }
         }
 
-        .friend-links {
+        。friend-links {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -1273,57 +1273,57 @@
             margin: 0 auto;
         }
 
-        .friend-link-card {
+        。friend-link-card {
             color: var(--text-color-dark);
             text-decoration: none;
             padding: 15px 30px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255， 255， 255, 0.1);
             border-radius: 10px;
             backdrop-filter: blur(10px);
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .friend-link-card:hover {
+        。friend-link-card:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255， 255， 255, 0.15);
         }
 
-        .light-theme .friend-link-card {
+        。light-theme 。friend-link-card {
             color: #333;
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255， 255， 255, 0.8);
         }
 
-        .light-theme .friend-link-card:hover {
-            background: rgba(255, 255, 255, 0.95);
+        。light-theme 。friend-link-card:hover {
+            background: rgba(255, 255, 255， 0.95);
         }
 
         /* 响应式适配 */
         @media (max-width: 768px) {
-            .friend-links {
+            。friend-links {
                 padding: 10px;
                 gap: 15px;
             }
             
-            .friend-link-card {
+            。friend-link-card {
                 padding: 12px 25px;
             }
         }
 
         /* 首屏关键样式 */
-        .main-content {
+        。main-content {
             content-visibility: auto;
             contain-intrinsic-size: 0 500px;
         }
         
-        .lazy-section {
+        。lazy-section {
             content-visibility: auto;
             contain-intrinsic-size: 0 300px;
         }
     </style>
     <!-- 添加网站图标 -->
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" 输入="image/x-icon" href="img/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -1342,12 +1342,12 @@
     <!-- 关键 CSS 内联 -->
     <style>
         /* 首屏关键样式 */
-        .main-content {
+        。main-content {
             content-visibility: auto;
             contain-intrinsic-size: 0 500px;
         }
         
-        .lazy-section {
+        。lazy-section {
             content-visibility: auto;
             contain-intrinsic-size: 0 300px;
         }
@@ -1376,70 +1376,70 @@
 
     <!-- 添加JavaScript代码 -->
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const themeToggle = document.querySelector('.theme-toggle');
-            const sunIcon = document.querySelector('.sun-icon');
-            const moonIcon = document.querySelector('.moon-icon');
+        document。addEventListener('DOMContentLoaded'， () => {
+            const themeToggle = document。querySelector('.theme-toggle');
+            const sunIcon = document。querySelector('.sun-icon');
+            const moonIcon = document。querySelector('.moon-icon');
             
             // 检查本地存储中的主题设置，默认为 light
-            const savedTheme = localStorage.getItem('theme') || 'light';
+            const savedTheme = localStorage。getItem('theme') || 'light';
             if (savedTheme === 'light' || !savedTheme) {
-                document.body.classList.add('light-theme');
-                sunIcon.style.display = 'none';
-                moonIcon.style.display = 'block';
+                document。body。classList。add('light-theme');
+                sunIcon。style。display = 'none';
+                moonIcon。style。display = 'block';
             } else {
-                sunIcon.style.display = 'block';
-                moonIcon.style.display = 'none';
+                sunIcon。style。display = 'block';
+                moonIcon。style。display = 'none';
             }
 
             // 切换主题
-            themeToggle.addEventListener('click', () => {
-                document.body.classList.toggle('light-theme');
-                const isLight = document.body.classList.contains('light-theme');
+            themeToggle。addEventListener('click'， () => {
+                document。body。classList。toggle('light-theme');
+                const isLight = document。body.classList。contains('light-theme');
                 
                 // 更新图标显示
-                sunIcon.style.display = isLight ? 'none' : 'block';
-                moonIcon.style.display = isLight ? 'block' : 'none';
+                sunIcon。style。display = isLight ? 'none' : 'block';
+                moonIcon。style。display = isLight ? 'block' : 'none';
                 
                 // 保存主题设置到本地存储
-                localStorage.setItem('theme', isLight ? 'light' : 'dark');
+                localStorage。setItem('theme'， isLight ? 'light' : 'dark');
             });
         });
 
         // 存储动画状态
         const animationState = {
-            isAnimating: false,
+            isAnimating: false，
             hasAnimated: false
         };
 
         // 改进的数字动画函数
-        function animateNumber(element, start, end, duration) {
+        function animateNumber(element， start, end, duration) {
             // 如果已经完成动画，直接返回
-            if (element.dataset.completed === 'true') {
+            if (element。dataset。completed === 'true') {
                 return;
             }
 
-            const isDecimal = element.dataset.decimal === 'true';
-            const suffix = element.dataset.suffix || '';
+            const isDecimal = element。dataset。decimal === 'true';
+            const suffix = element。dataset。suffix || '';
             let startTimestamp = null;
             let lastValue = null;
             
-            const easeOutQuart = t => 1 - Math.pow(1 - t, 4);
+            const easeOutQuart = t => 1 - Math。pow(1 - t， 4);
             
             const step = (timestamp) => {
                 if (!startTimestamp) startTimestamp = timestamp;
-                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const progress = Math。min((timestamp - startTimestamp) / duration, 1);
                 const easedProgress = easeOutQuart(progress);
                 
                 let current;
                 if (isDecimal) {
                     current = (easedProgress * (end - start) + start).toFixed(1);
                 } else {
-                    current = Math.floor(easedProgress * (end - start) + start);
+                    current = Math。floor(easedProgress * (end - start) + start);
                     
                     if (lastValue === current) {
                         if (progress < 1) {
-                            window.requestAnimationFrame(step);
+                            window。requestAnimationFrame(step);
                         }
                         return;
                     }
@@ -1447,95 +1447,95 @@
                     current = current.toLocaleString('zh-CN');
                 }
                 
-                element.textContent = current + suffix;
+                element。textContent = current + suffix;
                 
                 if (progress < 1) {
-                    window.requestAnimationFrame(step);
+                    window。requestAnimationFrame(step);
                 } else {
                     // 动画完成，设置最终值和完成标记
                     if (!isDecimal) {
-                        element.textContent = end.toLocaleString('zh-CN') + suffix;
+                        element。textContent = end.toLocaleString('zh-CN') + suffix;
                     }
-                    element.dataset.completed = 'true';
-                    animationState.isAnimating = false;
+                    element。dataset。completed = 'true';
+                    animationState。isAnimating = false;
                 }
             };
             
             // 开始动画
-            animationState.isAnimating = true;
-            window.requestAnimationFrame(step);
+            animationState。isAnimating = true;
+            window。requestAnimationFrame(step);
         }
 
         // 优化的观察者逻辑
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && !animationState.hasAnimated) {
+            entries。forEach(entry => {
+                if (entry。isIntersecting && !animationState。hasAnimated) {
                     const statNumbers = document.querySelectorAll('.stat-number:not([data-completed="true"])');
-                    if (statNumbers.length > 0 && !animationState.isAnimating) {
-                        statNumbers.forEach(number => {
-                            const finalValue = parseFloat(number.dataset.value);
+                    if (statNumbers.length > 0 && !animationState。isAnimating) {
+                        statNumbers。forEach(number => {
+                            const finalValue = parseFloat(number。dataset.value);
                             const isDecimal = number.dataset.decimal === 'true';
                             const startValue = isDecimal ? 0.0 : 0;
-                            animateNumber(number, startValue, finalValue, 2500);
+                            animateNumber(number， startValue, finalValue, 2500);
                         });
-                        animationState.hasAnimated = true;
-                        observer.disconnect(); // 停止观察
+                        animationState。hasAnimated = true;
+                        observer。disconnect(); // 停止观察
                     }
                 }
             });
-        }, {
+        }， {
             threshold: 0.5
         });
 
         // 初始化观察
-        document.addEventListener('DOMContentLoaded', () => {
-            const statsContainer = document.querySelector('.download-stats');
-            const rect = statsContainer.getBoundingClientRect();
+        document。addEventListener('DOMContentLoaded'， () => {
+            const statsContainer = document。querySelector('.download-stats');
+            const rect = statsContainer。getBoundingClientRect();
             
-            if (rect.top < window.innerHeight && !animationState.hasAnimated) {
+            if (rect。top < window.innerHeight && !animationState.hasAnimated) {
                 // 如果在视口中且未动画，立即开始动画
                 const statNumbers = document.querySelectorAll('.stat-number:not([data-completed="true"])');
-                statNumbers.forEach(number => {
-                    const finalValue = parseFloat(number.dataset.value);
-                    const isDecimal = number.dataset.decimal === 'true';
+                statNumbers。forEach(number => {
+                    const finalValue = parseFloat(number。dataset.value);
+                    const isDecimal = number。dataset。decimal === 'true';
                     const startValue = isDecimal ? 0.0 : 0;
-                    animateNumber(number, startValue, finalValue, 2500);
+                    animateNumber(number， startValue， finalValue, 2500);
                 });
-                animationState.hasAnimated = true;
+                animationState。hasAnimated = true;
             } else {
                 // 否则等待滚动到可视区域
-                observer.observe(statsContainer);
+                observer。observe(statsContainer);
             }
         });
 
         // 添加返回顶部按钮功能
-        document.addEventListener('DOMContentLoaded', () => {
-            const backToTop = document.querySelector('.back-to-top');
+        document。addEventListener('DOMContentLoaded'， () => {
+            const backToTop = document。querySelector('.back-to-top');
             
             // 监听滚动事件
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 300) {
-                    backToTop.classList.add('visible');
+            window。addEventListener('scroll'， () => {
+                if (window。scrollY > 300) {
+                    backToTop。classList。add('visible');
                 } else {
-                    backToTop.classList.remove('visible');
+                    backToTop。classList。remove('visible');
                 }
             });
 
             // 点击返回顶部
-            backToTop.addEventListener('click', () => {
-                window.scrollTo({
-                    top: 0,
+            backToTop。addEventListener('click'， () => {
+                window。scrollTo({
+                    top: 0，
                     behavior: 'smooth'
                 });
             });
         });
 
         // 轮播图功能
-        document.addEventListener('DOMContentLoaded', () => {
+        document。addEventListener('DOMContentLoaded'， () => {
             const track = document.querySelector('.carousel-track');
-            const slides = document.querySelectorAll('.carousel-slide');
-            const prevButton = document.querySelector('.carousel-button.prev');
-            const nextButton = document.querySelector('.carousel-button.next');
+            const slides = document。querySelectorAll('.carousel-slide');
+            const prevButton = document。querySelector('.carousel-button.prev');
+            const nextButton = document。querySelector('.carousel-button.next');
             const indicatorsContainer = document.querySelector('.carousel-indicators');
             
             let currentIndex = 0;
@@ -1543,25 +1543,25 @@
             const slideCount = slides.length;
 
             // 创建指示器
-            slides.forEach((_, index) => {
-                const indicator = document.createElement('div');
-                indicator.classList.add('indicator');
-                if (index === 0) indicator.classList.add('active');
-                indicator.addEventListener('click', () => goToSlide(index));
-                indicatorsContainer.appendChild(indicator);
+            slides。forEach((_， index) => {
+                const indicator = document。createElement('div');
+                indicator。classList。add('indicator');
+                if (index === 0) indicator.classList。add('active');
+                indicator。addEventListener('click'， () => goToSlide(index));
+                indicatorsContainer。appendChild(indicator);
             });
 
-            const indicators = document.querySelectorAll('.indicator');
+            const indicators = document。querySelectorAll('.indicator');
 
             function updateIndicators() {
-                indicators.forEach((indicator, index) => {
-                    indicator.classList.toggle('active', index === currentIndex);
+                indicators。forEach((indicator， index) => {
+                    indicator。classList。toggle('active'， index === currentIndex);
                 });
             }
 
             function goToSlide(index) {
                 currentIndex = index;
-                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                track。style。transform = `translateX(-${currentIndex * 100}%)`;
                 updateIndicators();
             }
 
@@ -1577,7 +1577,7 @@
 
             // 自动播放
             function startAutoplay() {
-                autoplayInterval = setInterval(nextSlide, 3500);
+                autoplayInterval = setInterval(nextSlide， 3500);
             }
 
             function stopAutoplay() {
@@ -1585,13 +1585,13 @@
             }
 
             // 事件监听
-            prevButton.addEventListener('click', () => {
+            prevButton。addEventListener('click'， () => {
                 prevSlide();
                 stopAutoplay();
                 startAutoplay();
             });
 
-            nextButton.addEventListener('click', () => {
+            nextButton。addEventListener('click'， () => {
                 nextSlide();
                 stopAutoplay();
                 startAutoplay();
@@ -1601,18 +1601,18 @@
             let touchStartX = 0;
             let touchEndX = 0;
 
-            track.addEventListener('touchstart', e => {
-                touchStartX = e.touches[0].clientX;
+            track。addEventListener('touchstart'， e => {
+                touchStartX = e。touches[0]。clientX;
                 stopAutoplay();
-            }, { passive: true });
+            }， { passive: true });
 
-            track.addEventListener('touchmove', e => {
-                touchEndX = e.touches[0].clientX;
-            }, { passive: true });
+            track。addEventListener('touchmove'， e => {
+                touchEndX = e。touches[0]。clientX;
+            }， { passive: true });
 
-            track.addEventListener('touchend', () => {
+            track。addEventListener('touchend'， () => {
                 const difference = touchStartX - touchEndX;
-                if (Math.abs(difference) > 50) {
+                if (Math。abs(difference) > 50) {
                     if (difference > 0) {
                         nextSlide();
                     } else {
@@ -1623,72 +1623,72 @@
             });
 
             // 鼠标悬停时暂停自动播放
-            track.addEventListener('mouseenter', stopAutoplay);
-            track.addEventListener('mouseleave', startAutoplay);
+            track。addEventListener('mouseenter'， stopAutoplay);
+            track。addEventListener('mouseleave'， startAutoplay);
 
             // 开始自动播放
             startAutoplay();
         });
 
-        document.addEventListener('DOMContentLoaded', () => {
-            const cards = document.querySelectorAll('.feature-card');
+        document。addEventListener('DOMContentLoaded'， () => {
+            const cards = document。querySelectorAll('.feature-card');
             
-            window.addEventListener('scroll', () => {
-                cards.forEach(card => {
-                    const rect = card.getBoundingClientRect();
-                    const centerY = window.innerHeight / 2;
-                    const cardCenterY = rect.top + rect.height / 2;
+            window。addEventListener('scroll'， () => {
+                cards。forEach(card => {
+                    const rect = card。getBoundingClientRect();
+                    const centerY = window。innerHeight / 2;
+                    const cardCenterY = rect。top + rect。height / 2;
                     const distance = Math.abs(centerY - cardCenterY);
-                    const maxDistance = window.innerHeight / 2;
-                    const scale = Math.max(0.95, 1 - (distance / maxDistance) * 0.1);
+                    const maxDistance = window。innerHeight / 2;
+                    const scale = Math。max(0.95, 1 - (distance / maxDistance) * 0.1);
                     
-                    if (rect.top < window.innerHeight && rect.bottom > 0) {
-                        card.style.transform = `scale(${scale}) translateZ(${20 * scale}px)`;
-                        card.style.opacity = scale;
+                    if (rect。top < window。innerHeight && rect.bottom > 0) {
+                        card。style。transform = `scale(${scale}) translateZ(${20 * scale}px)`;
+                        card。style。opacity = scale;
                     }
                 });
-            }, { passive: true });
+            }， { passive: true });
             
             // 添加触摸反馈
-            if ('ontouchstart' in window) {
-                cards.forEach(card => {
-                    card.addEventListener('touchstart', () => {
-                        card.style.transform = 'scale(0.98)';
-                    }, { passive: true });
+            if ('ontouchstart' 在 window) {
+                cards。forEach(card => {
+                    card。addEventListener('touchstart'， () => {
+                        card。style。transform = 'scale(0.98)';
+                    }， { passive: true });
                     
-                    card.addEventListener('touchend', () => {
-                        card.style.transform = '';
-                    }, { passive: true });
+                    card。addEventListener('touchend'， () => {
+                        card。style。transform = '';
+                    }， { passive: true });
                 });
             }
         });
 
         // 优化滚动监听性能
-        document.addEventListener('DOMContentLoaded', function() {
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
+        document。addEventListener('DOMContentLoaded'， function() {
+            const observer = new IntersectionObserver((entries， observer) => {
+                entries。forEach(entry => {
+                    if (entry。isIntersecting) {
+                        entry。target。classList。add('active');
                         // 一旦元素显示，停止观察
-                        observer.unobserve(entry.target);
+                        observer。unobserve(entry。target);
                     }
                 });
-            }, {
-                threshold: 0.1,
+            }， {
+                threshold: 0.1，
                 rootMargin: '50px' // 提前开始加载
             });
 
             // 使用 requestAnimationFrame 优化 DOM 操作
             requestAnimationFrame(() => {
-                document.querySelectorAll('.slide-fade-up').forEach((el) => {
-                    observer.observe(el);
+                document。querySelectorAll('.slide-fade-up')。forEach((el) => {
+                    observer。observe(el);
                 });
             });
         });
 
         // 优化滚动事件处理
         let ticking = false;
-        window.addEventListener('scroll', () => {
+        window。addEventListener('scroll'， () => {
             if (!ticking) {
                 requestAnimationFrame(() => {
                     // 滚动相关的操作
@@ -1699,97 +1699,97 @@
         });
 
         // 图片加载优化
-        document.querySelectorAll('img').forEach(img => {
-            img.loading = 'lazy';
-            img.decoding = 'async';
+        document。querySelectorAll('img')。forEach(img => {
+            img。loading = 'lazy';
+            img。decoding = 'async';
         });
 
         // 页面加载完成时滚动到顶部
-        window.onload = function() {
-            window.scrollTo({
-                top: 0,
+        window。onload = function() {
+            window。scrollTo({
+                top: 0，
                 behavior: 'instant' // 立即滚动，不使用平滑效果
             });
         };
 
         // 确保页面刷新时也会回到顶部
-        if (history.scrollRestoration) {
-            history.scrollRestoration = 'manual';
+        if (history。scrollRestoration) {
+            history。scrollRestoration = 'manual';
         }
 
         // 页面卸载前记录当前位置为顶部
         window.onbeforeunload = function() {
-            window.scrollTo(0, 0);
+            window。scrollTo(0， 0);
         };
 
         // 使用 requestAnimationFrame 优化滚动事件
         let scrollTimeout;
-        window.addEventListener('scroll', () => {
+        window。addEventListener('scroll'， () => {
             if (!scrollTimeout) {
                 scrollTimeout = requestAnimationFrame(() => {
                     // 执行滚动相关操作
                     scrollTimeout = null;
                 });
             }
-        }, { passive: true });
+        }， { passive: true });
 
         // 优化图片加载
-        document.addEventListener('DOMContentLoaded', () => {
+        document。addEventListener('DOMContentLoaded'， () => {
             const images = document.querySelectorAll('img[loading="lazy"]');
-            if ('loading' in HTMLImageElement.prototype) {
-                images.forEach(img => {
-                    img.loading = 'lazy';
-                    img.decoding = 'async';
+            if ('loading' 在 HTMLImageElement.prototype) {
+                images。forEach(img => {
+                    img。loading = 'lazy';
+                    img。decoding = 'async';
                 });
             } else {
                 // 回退方案：使用 Intersection Observer
                 const imageObserver = new IntersectionObserver((entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
+                    entries。forEach(entry => {
+                        if (entry。isIntersecting) {
                             const img = entry.target;
                             img.src = img.dataset.src;
-                            observer.unobserve(img);
+                            observer。unobserve(img);
                         }
                     });
                 });
 
-                images.forEach(img => {
-                    imageObserver.observe(img);
+                images。forEach(img => {
+                    imageObserver。observe(img);
                 });
             }
         });
 
         // 优化动画性能
         const animationObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
+            entries。forEach(entry => {
                 if (entry.isIntersecting) {
                     requestAnimationFrame(() => {
-                        entry.target.classList.add('animate');
+                        entry。target.classList.add('animate');
                     });
                 }
             });
-        }, { threshold: 0.1 });
+        }， { threshold: 0.1 });
 
-        document.querySelectorAll('.feature-card, .partner-card').forEach(el => {
-            animationObserver.observe(el);
+        document。querySelectorAll('.feature-card, .partner-card')。forEach(el => {
+            animationObserver。observe(el);
         });
 
         // 优化轮播图性能
         const carousel = document.querySelector('.carousel-track');
         if (carousel) {
-            carousel.addEventListener('touchstart', () => {
-                carousel.style.willChange = 'transform';
-            }, { passive: true });
+            carousel。addEventListener('touchstart'， () => {
+                carousel。style.willChange = 'transform';
+            }， { passive: true });
 
             carousel.addEventListener('touchend', () => {
                 setTimeout(() => {
-                    carousel.style.willChange = 'auto';
+                    carousel。style。willChange = 'auto';
                 }, 100);
             }, { passive: true });
         }
 
         // 优化资源加载顺序
-        document.addEventListener('DOMContentLoaded', () => {
+        document。addEventListener('DOMContentLoaded', () => {
             // 延迟加载非关键 JavaScript
             const deferScripts = document.querySelectorAll('script[defer-load]');
             requestIdleCallback(() => {
@@ -1837,7 +1837,7 @@
             if ('IntersectionObserver' in window) {
                 const sections = document.querySelectorAll('.lazy-section');
                 const sectionObserver = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
+                    entries。forEach(entry => {
                         if (entry.isIntersecting) {
                             entry.target.classList.add('loaded');
                             sectionObserver.unobserve(entry.target);
@@ -1865,69 +1865,25 @@
     </div>
 
 <div class="container">
-    <img src="img/logo.PNG" alt="夜喵影视" class="logo">
-    <h1>夜喵影视</h1>
-    <p>海量影视资源，随时随地尽情观看</p>
+    <img src="img/logo.PNG" alt="植物大战僵尸pvzE支线版" class="logo">
+    <h1>植物大战僵尸</h1>
     
     <div class="download-buttons">
-        <a href="#" class="download-button android">
-            <i class="fab fa-android"></i>
-            <span class="button-text">
-                <small>下载安卓版</small>
-                <strong>Android</strong>
-            </span>
-        </a>
         <a href="#" class="download-button ios">
             <i class="fab fa-apple"></i>
             <span class="button-text">
-                <small>下载苹果版</small>
-                <strong>iOS</strong>
+                <small>下载电脑版</small>
+                <strong>Windows Xp-Windows 11</strong>
             </span>
         </a>
     </div>
 
-        <!-- 更新下载统计数据 -->
-        <div class="download-stats">
-            <div class="stat-item">
-                <span class="stat-number" data-value="999" data-suffix="+">0</span>
-                <span class="stat-label">累计下载</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number" data-value="4.9" data-decimal="true">0</span>
-                <span class="stat-label">用户评分</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number" data-value="99" data-suffix="+">0</span>
-                <span class="stat-label">日活用户</span>
-            </div>
-        </div>
-
         <div class="features parallax-container">
-            <h2>应用特色</h2>
+            <h2>游戏特色</h2>
             <div class="feature-cards">
                 <div class="feature-card">
-                    <h3>海量资源</h3>
-                    <p>海量影视资源，持续更新，满足您的观影需求</p>
-                </div>
-                <div class="feature-card">
-                    <h3>高清播放</h3>
-                    <p>高清流畅播放，画质清晰锐利</p>
-                </div>
-                <div class="feature-card">
-                    <h3>投屏观看</h3>
-                    <p>支持投屏观看，享受家庭影院级观影体验</p>
-                </div>
-                <div class="feature-card">
-                    <h3>智能推荐</h3>
-                    <p>个性化推荐，精准找片，发现更多好内容</p>
-                </div>
-                <div class="feature-card">
-                    <h3>离线缓存</h3>
-                    <p>支持视频离线缓存，随时随地观看无压力</p>
-                </div>
-                <div class="feature-card">
-                    <h3>无广告</h3>
-                    <p>无广告，无弹窗，纯净观影体验</p>
+                    <h3>好玩</h3>
+                    <p>别问我为啥</p>
                 </div>
             </div>
         </div>
@@ -1959,69 +1915,27 @@
         </div>
     </div>
 
-    <section class="contact-section">
-        <h2>技术与支持</h2>
-        <div class="contact-container">
-            <div class="contact-card">
-                <div class="contact-items">
-                    <a href=" https://xkwo.com" target="_blank" class="contact-item discord">
-                        <i class="fa-brands fa-weixin"></i>
-                        <span>微信客服</span>
-                    </a>
-                    <a href="https://xkwo.com" target="_blank" class="contact-item qq">
-                        <i class="fab fa-qq"></i>
-                        <span>QQ 客服</span>
-                    </a>
-                    <a href="https://xkwo.com" target="_blank" class="contact-item telegram">
-                        <i class="fab fa-telegram"></i>
-                        <span>Telegram 客服</span>
-                    </a>
-                    <a href="8933462@qq.com" class="contact-item email">
-                        <i class="fas fa-envelope"></i>
-                        <span>邮箱</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- 合作伙伴区块 -->
     <section class="partners-section">
         <div class="partners-container">
-            <h2>合作伙伴</h2>
+            <h2>特别感谢</h2>
             <div class="partner-category">
                 <div class="partner-cards">
                     <div class="partner-card">
-                        <img src="img/dkewl.png" alt="刀客源码网">
+                        <img src="img/dkewl.png" alt="yyds源码网">
                         <div class="partner-name">
-                            <h4>刀客源码网</h4>
+                            <h4>yyds源码网（原刀客）</h4>
                         </div>
                     </div>
-                    <div class="partner-card">
-                        <img src="img/cibc.jpeg" alt="CIBC logo">
-                        <div class="partner-name">
-                            <h4>CIBC</h4>
-                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 友情链接区块 -->
-    <section class="partners-section">
-        <div class="partners-container">
-            <h2>友情链接</h2>
-            <div class="friend-links">
-                <a href="https://www.dkewl.com" class="friend-link-card">网站源码</a>
-                <a href="https://www.dkewl.com" class="friend-link-card">刀客源码网</a>
             </div>
         </div>
     </section>
 
     <!-- 添加版权信息 -->
     <footer style="text-align: center; padding: 20px; margin-top: 40px; color: var(--text-color-dark); font-size: 0.9em;">
-        <p style="font-weight: bold;">© 2025 刀客源码网. All rights reserved.</p>
+        <p style="font-weight: bold;">© 2025 pvzE. All rights reserved.</p>
         <p style="margin-top: 5px; font-size: 0.8em; font-weight: bold;">
             <a href="privacy.html" style="color: inherit; text-decoration: none; margin: 0 10px;">隐私政策</a> |
             <a href="terms.html" style="color: inherit; text-decoration: none; margin: 0 10px;">用户协议</a>
